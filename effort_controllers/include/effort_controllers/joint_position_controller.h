@@ -105,7 +105,7 @@ public:
    * \returns True if initialization was successful and the controller
    * is ready to be started.
    */  
-  bool init(hardware_interface::EffortJointInterface *robot, ros::NodeHandle &n);
+  bool init(hardware_interface::EffortJointInterface *robot, ros::NodeHandle& root_nh, ros::NodeHandle &controller_nh);
 
   /*!
    * \brief Give set position of the joint for next update: revolute (angle) and prismatic (position)
